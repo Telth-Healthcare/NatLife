@@ -178,7 +178,7 @@ const EarlyAccessForm = forwardRef((props, ref) => {
                     size="lg"
                     className="w-full h-14 text-lg"
                   >
-                    Claim Your Spot
+                     Join the Waitlist
                   </Button>
                 </form>
 
@@ -215,7 +215,7 @@ const EarlyAccessForm = forwardRef((props, ref) => {
                 </p>
                 <div className="inline-block px-6 py-3 rounded-2xl bg-secondary/20 backdrop-blur-sm">
                   <p className="text-primary-foreground font-semibold">
-                    Check your email for a special welcome gift 🎁
+                    Check your email for a special welcome gift
                   </p>
                 </div>
               </motion.div>

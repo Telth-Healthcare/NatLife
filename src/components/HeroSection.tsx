@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import heroFarm from "@/assets/hero-farm.jpg";
-import natlifeLogo from "@/assets/natlife-logo.svg";
+import natlifeLogo from "@/assets/Natlife logo copy-01.svg";
 
 const HeroSection = ({ onNavigate, onLearnMore }) => {
   return (
@@ -28,7 +28,7 @@ const HeroSection = ({ onNavigate, onLearnMore }) => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="absolute top-8 left-8 z-20"
       >
-        <img src={natlifeLogo} alt="NatLife Logo" className="h-16 md:h-20 w-auto" />
+        <img src={natlifeLogo} alt="NatLife Logo" className="h-20 md:h-20 w-auto" />
       </motion.div>
 
       {/* Hero Content - Frosted Glass Container */}
@@ -110,7 +110,7 @@ const HeroSection = ({ onNavigate, onLearnMore }) => {
             <Button
               variant="outline"
               size="lg"
-              onClick={onLearnMore} 
+              onClick={onLearnMore}
               className="text-lg border-primary-foreground/80 text-primary hover:bg-primary-foreground/10 transition-colors duration-200"
             >
               Learn More

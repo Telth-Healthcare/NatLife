@@ -18,6 +18,10 @@ const Index = () => {
     valueRef?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  const handleNavigateToAccess = () => {
+    formRef?.current?.scrollIntoView({behavior: 'smooth', block: 'start'})
+  }
+
 
   return (
     <div className="min-h-screen">
@@ -25,7 +29,7 @@ const Index = () => {
       <ValueProposition ref={valueRef} />
       <ProductCategories />
       <EarlyAccessForm ref={formRef} />
-      <FooterCTA />
+      <FooterCTA onNavigate={handleNavigateToAccess}/>
     </div>
   );
 };

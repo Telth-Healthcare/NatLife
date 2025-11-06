@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Instagram, Facebook, Mail } from "lucide-react";
 
-const FooterCTA = () => {
+const FooterCTA = ({ onNavigate }) => {
   return (
     <footer className="relative py-16 bg-primary text-primary-foreground overflow-hidden">
       {/* Organic Shape Background */}
@@ -25,7 +25,7 @@ const FooterCTA = () => {
             <p className="text-xl text-primary-foreground/80 mb-8">
               Join the NatLife community and discover purely organic living.
             </p>
-            <Button variant="secondary" size="lg" className="text-lg magnetic-hover">
+            <Button variant="secondary" size="lg" className="text-lg magnetic-hover" onClick={onNavigate}>
               Get Early Access
             </Button>
           </motion.div>
@@ -42,19 +42,19 @@ const FooterCTA = () => {
             className="flex justify-center gap-6 mb-10"
           >
             <a
-              href="#"
+              // href="#"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:scale-110 transition-spring"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              // href="#"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:scale-110 transition-spring"
             >
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="mailto:credentials@telth.org"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:scale-110 transition-spring"
             >
               <Mail className="w-5 h-5" />
@@ -73,13 +73,13 @@ const FooterCTA = () => {
               © 2025 NatLife. All rights reserved. Purely Organic, Naturally Fresh.
             </p>
             <div className="flex justify-center gap-6 text-sm text-primary-foreground/60">
-              <a href="#" className="hover:text-secondary transition-smooth">
+              {/* <a href="#" className="hover:text-secondary transition-smooth">
                 Privacy Policy
               </a>
               <span>•</span>
               <a href="#" className="hover:text-secondary transition-smooth">
                 Terms of Service
-              </a>
+              </a> */}
               <span>•</span>
               <a href="#" className="hover:text-secondary transition-smooth">
                 Contact Us
