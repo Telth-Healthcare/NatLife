@@ -54,7 +54,7 @@ const FooterCTA = ({ onNavigate }) => {
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="mailto:credentials@telth.org"
+              href="mailto:contact@natlife.org.in"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:scale-110 transition-spring"
             >
               <Mail className="w-5 h-5" />
