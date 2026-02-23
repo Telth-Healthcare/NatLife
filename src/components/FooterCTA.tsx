@@ -81,7 +81,7 @@ const FooterCTA = ({ onNavigate }) => {
                 Terms of Service
               </a> */}
               <span>•</span>
-              <a href="#" className="hover:text-secondary transition-smooth">
+              <a href="http://192.168.1.47:5173/shg-auth/signin" className="hover:text-secondary transition-smooth">
                 Contact Us
               </a>
             </div>
