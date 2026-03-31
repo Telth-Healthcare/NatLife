@@ -45,7 +45,7 @@ const EarlyAccessForm = forwardRef((props, ref) => {
       fd.append("message", `Interest: ${interest}`);
       // fd.append("subject", "New Early Access Form Submission");
 
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://contactforms-henna.vercel.app/", {
         method: "POST",
         body: fd,
       });
