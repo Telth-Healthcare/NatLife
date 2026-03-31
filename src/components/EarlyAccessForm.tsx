@@ -38,17 +38,17 @@ const EarlyAccessForm = forwardRef((props, ref) => {
     }
 
     try {
-      const fd = new FormData();
-      fd.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
-      fd.append("from_name", name);
-      fd.append("email", email);
-      fd.append("message", `Interest: ${interest}`);
-      // fd.append("subject", "New Early Access Form Submission");
 
-      const response = await fetch("https://contactforms-henna.vercel.app/", {
+
+      const response = await fetch("https://contactforms-henna.vercel.app/api/submit", {
         method: "POST",
-        body: fd,
-      });
+        headers: { "Content-Type": "application/json" },  // ← add this
+        body: JSON.stringify({                              // ← JSON not FormData
+          from_name: name,
+          email: email,
+          message: `Interest: ${interest}`,
+        }),
+      })
 
       const data = await response.json();
 
@@ -178,7 +178,7 @@ const EarlyAccessForm = forwardRef((props, ref) => {
                     size="lg"
                     className="w-full h-14 text-lg"
                   >
-                     Join the Waitlist
+                    Join the Waitlist
                   </Button>
                 </form>
 
